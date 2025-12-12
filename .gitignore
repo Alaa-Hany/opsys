@@ -1,0 +1,10 @@
+# Binaries
+[Dd]ebug/
+[Rr]elease/
+**/bin/
+**/obj/
+*.pdb
+*.suo
+
+# Virtual Disk File
+minifat.bin
