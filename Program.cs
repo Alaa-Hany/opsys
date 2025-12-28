@@ -1,12 +1,10 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Collections.Generic;
 using MiniFatFs;
 
 class Program
 {
-
-
     static void FormatFat(FatTableManager manager)
     {
         int[] freshFat = new int[FsConstants.FAT_ARRAY_SIZE];
@@ -28,7 +26,6 @@ class Program
 
         Console.WriteLine("\nFAT formatted successfully.");
     }
-
 
     static void RunTask4()
     {
@@ -109,44 +106,17 @@ class Program
         }
     }
 
-
     static void RunTask6()
     {
         Shell shell = new Shell();
         shell.Run();
     }
 
-
-
     static void Main(string[] args)
     {
-        while (true)
-        {
-            Console.WriteLine("\n====== Mini FAT OS ======");
-            Console.WriteLine("1 - Run Task 4 (FAT & Directory)");
-            Console.WriteLine("2 - Run Task 6 (Shell)");
-            Console.WriteLine("0 - Exit");
-            Console.Write("Choose: ");
+        
+        RunTask6();
 
-            string choice = Console.ReadLine();
-
-            switch (choice)
-            {
-                case "1":
-                    RunTask4();
-                    break;
-
-                case "2":
-                    RunTask6();
-                    break;
-
-                case "0":
-                    return;
-
-                default:
-                    Console.WriteLine("Invalid choice.");
-                    break;
-            }
-        }
+        
     }
 }
