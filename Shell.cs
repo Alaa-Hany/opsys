@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-namespace OPSYS
+namespace MiniFatFs
 {
     class Shell
     {
@@ -230,3 +230,4 @@ namespace OPSYS
         }
     }
 }
+
